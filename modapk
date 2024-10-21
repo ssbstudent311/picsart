@@ -19,6 +19,7 @@
             color: white;
             padding: 20px 0;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         main {
@@ -52,6 +53,7 @@
             position: relative;
             bottom: 0;
             width: 100%;
+            margin-top: 20px;
         }
 
         .download-button {
@@ -61,11 +63,33 @@
             padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.2s;
+            font-weight: bold;
         }
 
         .download-button:hover {
             background: #45a049;
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #388E3C;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 15px;
+            }
+
+            .download-button {
+                padding: 8px 12px;
+            }
         }
     </style>
 </head>
